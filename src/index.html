@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="webApp">
+<head>
+    <title>AuthServer - Test App</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap core CSS -->
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/font-awesome.css" rel="stylesheet" />
+    
+    <link href="Content/Site.css" rel="stylesheet" />
+</head>
+<body ng-cloak ng-controller="appController as appCtrl">
+    <!-- Navbar fixed top -->
+    <div class="navbar navbar-default navbar-fixed-top navbar-j" role="navigation">
+        <div class="container-fluid">
+            
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarmenu" ng-if="appCtrl.user">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="navbar-collapse collapse" id="navbarmenu" ng-if="appCtrl.user">
+                <!-- Right nav (Username & Logout) -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-fw fa-user"></i>{{appCtrl.user.profile.family_name}}, {{appCtrl.user.profile.given_name}} <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a ng-click="appCtrl.logout()"><i class="fa fa-fw fa-sign-out"></i>Cerrar sesión</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Left nav (Main menues) -->
+                <ul class="nav navbar-nav navbar-right" >
+                    <li><a href="#/">Home</a></li>
+                    
+                </ul>
+
+            </div><!--/.nav-collapse -->
+        </div><!--/.container -->
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="container" role="main">
+        <div class="row">
+            <div>
+                <div class="col-sm-12" ng-view></div>
+            </div>
+        </div>
+    </div> <!-- /container -->
+    <!-- build:js Scripts/scripts.min.js -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="Scripts/jquery-3.1.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="node_modules/oidc-client/dist/oidc-client.js"></script>
+    
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/angular-resource.js"></script>
+    <script src="Scripts/angular-sanitize.js"></script>
+    <script src="node_modules/angular-storage/dist/angular-storage.js"></script>
+    <script src="Scripts/angular-oidc-client.js"></script>
+    
+    <!--END:DEPENDENCIES-->
+    <!-- endbuild -->
+    <!-- build:js Scripts/mainapp.min.js -->
+    <script src="app/app.js"></script>
+    <!--SERVICIOS-->
+    <!--ROUTING AND NAVIGATION-->
+    <script src="app/app.route.js"></script>
+    
+    <!--END:ROUTING AND NAVIGATION-->
+    <!--END:SERVICIOS-->
+    <!--CONTROLLERS-->
+    <script src="app/modules/home/homeController.js"></script>
+    <!--END:CONTROLLERS-->
+    <!-- endbuild -->
+</body>
+</html>

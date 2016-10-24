@@ -1,0 +1,9 @@
+{
+	"version": "1.0.0",
+	"name": "asp.net",
+	"private": true,
+  "devDependencies": {
+    "angular-storage": "0.0.15",
+    "oidc-client": "1.2.0"
+  }
+}

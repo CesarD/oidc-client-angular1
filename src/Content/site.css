@@ -1,0 +1,212 @@
+﻿html {
+	position: relative;
+	min-height: 100%;
+}
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+	display: none !important;
+}
+
+.navbar-j {
+	background-color: #64bddd;
+	border-color: #e7e7e7;
+	margin-bottom: 0;
+}
+
+	.navbar-j .logos {
+		padding: 15px 0;
+		padding-left: 15px;
+		background-color: #eff0f0;
+	}
+	
+		.navbar-j .logos .media img {
+			max-width: 250px;
+			max-height: 45px;
+		}
+
+		.navbar-j .logos img {
+			max-width: 400px;
+			max-height: 45px;
+		}
+
+	.navbar-j .navbar-brand {
+		max-width: 250px;
+		height: 30px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		padding-top: 5px;
+		padding-bottom: 0;
+		color: #fff;
+		background-color: #64bddd;
+	}
+
+		.navbar-j .navbar-brand:hover,
+		.navbar-j .navbar-brand:focus {
+			color: #fff;
+			background-color: #64bddd;
+		}
+
+	.navbar-j .navbar-text {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		color: #fff;
+	}
+
+	.navbar-j .navbar-nav {
+		background-color: #2a6d84;
+	}
+
+	.navbar-j .navbar-nav {
+		border-left: 1px solid #fff;
+	}
+
+		.navbar-j .navbar-nav > li > a {
+			padding-top: 5px;
+			padding-bottom: 5px;
+			color: #fff;
+		}
+
+			.navbar-j .navbar-nav > li > a:hover,
+			.navbar-j .navbar-nav > li > a:focus {
+				color: #fff;
+				background-color: #75aadb;
+			}
+
+		.navbar-j .navbar-nav > .disabled > a,
+		.navbar-j .navbar-nav > .disabled > a:hover,
+		.navbar-j .navbar-nav > .disabled > a:focus {
+			color: #ccc;
+			background-color: transparent;
+		}
+
+	.navbar-j .navbar-toggle {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		border-color: #fff;
+	}
+
+		.navbar-j .navbar-toggle:hover,
+		.navbar-j .navbar-toggle:focus {
+			background-color: #2a6d84;
+		}
+
+		.navbar-j .navbar-toggle .icon-bar {
+			background-color: #fff;
+		}
+
+	.navbar-j .navbar-collapse,
+	.navbar-j .navbar-form {
+		background-color: #64bddd;
+		border-color: #64bddd;
+	}
+
+	.navbar-j .navbar-nav > .dropdown > a:hover .caret,
+	.navbar-j .navbar-nav > .dropdown > a:focus .caret {
+		border-top-color: #fff;
+		border-bottom-color: #fff;
+	}
+
+	.navbar-j .navbar-nav > .open > .dropdown-menu > li > a:hover,
+	.navbar-j .navbar-nav > .open > .dropdown-menu > li > a:focus {
+		color: #fff;
+		background-color: #75aadb;
+	}
+
+	.navbar-j .navbar-nav > .open > a,
+	.navbar-j .navbar-nav > .open > a:hover,
+	.navbar-j .navbar-nav > .open > a:focus {
+		color: #fff;
+		background-color: #549bc6;
+	}
+
+		.navbar-j .navbar-nav > .open > a .caret,
+		.navbar-j .navbar-nav > .open > a:hover .caret,
+		.navbar-j .navbar-nav > .open > a:focus .caret {
+			border-top-color: #fff;
+			border-bottom-color: #fff;
+		}
+
+	.navbar-j .navbar-nav > .dropdown > a .caret {
+		border-top-color: #843511;
+		border-bottom-color: #843511;
+	}
+
+	.navbar-j .navbar-link {
+		color: #843511;
+	}
+
+		.navbar-j .navbar-link:hover {
+			color: #fff;
+		}
+
+	.navbar-j .breadcrumb {
+		margin-right: -15px;
+		margin-bottom: 0;
+		margin-left: -15px;
+		border-radius: 0;
+	}
+
+@media(max-width: 778px) {
+	.navbar-j .navbar-nav li:last-child {
+		border-right: 1px solid #fff;
+		border-left: none;
+	}
+}
+
+@media (max-width: 767px) {
+	.navbar-j .navbar-brand {
+		padding-top: 12px;
+	}
+
+	.navbar-j .navbar-nav li:last-child {
+		border-left: none;
+	}
+
+	.navbar-j .navbar-collapse :not(:empty) {
+		background-color: #549bc6;
+	}
+
+	.navbar-j .navbar-nav > li > span {
+		padding-left: 15px;
+	}
+
+	.navbar-j .navbar-nav .open .dropdown-menu > li > a {
+		color: #fff;
+	}
+
+		.navbar-j .navbar-nav .open .dropdown-menu > li > a:hover,
+		.navbar-j .navbar-nav .open .dropdown-menu > li > a:focus {
+			color: #fff;
+			background-color: #75aadb;
+		}
+
+	.navbar-j .navbar-nav .open .dropdown-menu > .active > a,
+	.navbar-j .navbar-nav .open .dropdown-menu > .active > a:hover,
+	.navbar-j .navbar-nav .open .dropdown-menu > .active > a:focus {
+		color: #fff;
+		background-color: #5b9ad4;
+	}
+
+	.navbar-j .navbar-nav .open .dropdown-menu > .disabled > a,
+	.navbar-j .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+	.navbar-j .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+		color: #ccc;
+		background-color: transparent;
+	}
+
+	.navbar-j .navbar-nav li:last-child {
+		border: none;
+	}
+}
+
+.page-header-j {
+	padding-bottom: 5px;
+	margin-top: 5px;
+}
+
+	.page-header-j h1,
+	.page-header-j h2 {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
